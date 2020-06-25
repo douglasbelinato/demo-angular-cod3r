@@ -1,6 +1,10 @@
 <mat-card class="home mat-elevation-z3">
     <mat-card-title class="title">Bem vindo!</mat-card-title>
     <mat-card-subtitle class="subtitle">
-        Aplicação de cadastro, consulta, atualização e exclusão de produtos usando Angular e NodeJS.
-    </mat-card-subtitle>
+        Aplicação para gestão de produtos usando Angular e NodeJS.<br/>
+        Operações disponíveis:
+        <ul>
+            <li *myFor="let operacao em ['Cadastro', 'Consulta', 'Atualização', 'Exclusão']">{{ operacao }}</li>
+        </ul>
+    </mat-card-subtitle>    
 </mat-card>
