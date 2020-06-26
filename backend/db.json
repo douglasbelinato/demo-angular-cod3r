@@ -14,6 +14,16 @@
       "id": 3,
       "name": "Chevrolet Onix",
       "price": 40000
+    },
+    {
+      "name": "Lava louças",
+      "price": "500.99",
+      "id": 6
+    },
+    {
+      "name": "Livro Nunca desista dos seus sonhos",
+      "price": "24.50",
+      "id": 7
     }
   ]
 }
