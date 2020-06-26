@@ -19,9 +19,10 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 @NgModule({
-  declarations: [
+  declarations: [ // Aqui declaramos componentes, pipes e diretivas
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -40,9 +41,10 @@ import { ForDirective } from './directives/for.directive';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
-  providers: [],
+  providers: [], // Aqui em providers eu posso colocar services que precisam ser expostos
   bootstrap: [AppComponent]
 })
 export class AppModule { }
