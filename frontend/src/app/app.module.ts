@@ -21,6 +21,8 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [ // Aqui declaramos componentes, pipes e diretivas
     AppComponent,
@@ -42,7 +44,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [], // Aqui em providers eu posso colocar services que precisam ser expostos
   bootstrap: [AppComponent]
