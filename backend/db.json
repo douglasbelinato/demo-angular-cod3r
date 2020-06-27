@@ -24,6 +24,11 @@
       "name": "Livro Nunca desista dos seus sonhos",
       "price": "24.50",
       "id": 7
+    },
+    {
+      "name": "Kindle Oasis",
+      "price": "1300.00",
+      "id": 8
     }
   ]
 }
