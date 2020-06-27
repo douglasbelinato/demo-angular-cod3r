@@ -1,8 +1,9 @@
+import { Product } from './../product.model';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { ProductReadSchematicsExampleDataSource, ProductReadSchematicsExampleItem } from './product-read-schematics-example-datasource';
+import { ProductReadSchematicsExampleDataSource } from './product-read-schematics-example-datasource';
 
 @Component({
   selector: 'app-product-read-schematics-example',
@@ -12,11 +13,11 @@ import { ProductReadSchematicsExampleDataSource, ProductReadSchematicsExampleIte
 export class ProductReadSchematicsExampleComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<ProductReadSchematicsExampleItem>;
+  @ViewChild(MatTable) table: MatTable<Product>;
   dataSource: ProductReadSchematicsExampleDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', 'priceId'];
 
   ngOnInit() {
     this.dataSource = new ProductReadSchematicsExampleDataSource();
