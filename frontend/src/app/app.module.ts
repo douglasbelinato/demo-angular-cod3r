@@ -35,6 +35,8 @@ import { MatSortModule } from '@angular/material/sort'
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common'
 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+
 // Registrando a localição de ptBR
 registerLocaleData(localePt)
 
@@ -68,7 +70,8 @@ registerLocaleData(localePt)
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatProgressSpinnerModule
   ],
   providers: [{
     provide: LOCALE_ID,

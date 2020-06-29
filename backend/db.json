@@ -29,6 +29,11 @@
       "name": "Kindle Oasis",
       "price": "1300.00",
       "id": 8
+    },
+    {
+      "name": "PS4",
+      "price": "1800.55",
+      "id": 9
     }
   ]
 }

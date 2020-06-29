@@ -1,3 +1,5 @@
+import { ProductReadTO } from './product.read.to';
+import { map } from 'rxjs/operators';
 import { Product } from './product.model';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
@@ -25,7 +27,18 @@ export class ProductService {
     return this.http.post<Product>(this.baseUrl, product)
   }
 
-  read(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseUrl)
+  read(page: number = 0, limit: number = 5, sort: string = 'id', order: string = 'asc'): Observable<ProductReadTO> {
+    let params = `?_page=${page + 1}&_limit=${limit}&_sort=${sort}&_order=${order}`
+    return this.http.get(this.baseUrl + params, { observe: 'response' })
+      .pipe(
+        map(response => {
+          const productReadTO: ProductReadTO = {
+            products: <Product[]>response.body,
+            total: parseInt(response.headers.get('X-Total-Count'))
+          }
+
+          return productReadTO
+        })
+      )
   }
 }
