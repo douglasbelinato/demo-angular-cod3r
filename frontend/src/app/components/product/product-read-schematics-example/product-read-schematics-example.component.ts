@@ -43,12 +43,12 @@ export class ProductReadSchematicsExampleComponent implements AfterViewInit, OnI
     //   this.dataSource.get(this.paginator.pageIndex, this.paginator.pageSize)
     // })
 
-    this.sort.sortChange.subscribe(() => {
-      console.log(this.sort.direction)
-      console.log(this.sort.active)
+    // this.sort.sortChange.subscribe(() => {
+    //   console.log(this.sort.direction)
+    //   console.log(this.sort.active)
       // Posso fazer com que o index seja 0 quando eu fizer uma ordernação
       // this.paginator.pageIndex = 0;
-    })
+    // })
 
     // Merge do rxjs para unir os eventos de subscribe do sort e do paginator
     // Desta forma, ao realizar qualquer uma das ações, tratamos em um único ponto
