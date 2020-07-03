@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta Stabilo preta",
-      "price": 7.5
+      "name": "Caneta Stabilo Preta",
+      "price": "8.25"
     },
     {
       "id": 2,
