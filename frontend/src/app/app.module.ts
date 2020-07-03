@@ -35,7 +35,8 @@ import { MatSortModule } from '@angular/material/sort'
 import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from '@angular/common'
 
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component'
 
 // Registrando a localição de ptBR
 registerLocaleData(localePt)
@@ -52,7 +53,8 @@ registerLocaleData(localePt)
     RedDirective,
     ForDirective,
     ProductReadComponent,
-    ProductReadSchematicsExampleComponent
+    ProductReadSchematicsExampleComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
